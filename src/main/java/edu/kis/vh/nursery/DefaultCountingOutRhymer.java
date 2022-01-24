@@ -1,11 +1,9 @@
 package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.Containers.IntArrayStack;
+import edu.kis.vh.nursery.Containers.IntContainer;
 
 public class DefaultCountingOutRhymer {
-	public int getTotal() {
-		return stack.getTotal();
-	}
 
 	public void countIn(int in) {
 		stack.push(in);
@@ -27,12 +25,12 @@ public class DefaultCountingOutRhymer {
 		return stack.pop();
 	}
 
-	IntArrayStack stack;
+	IntContainer stack;
 
 	public DefaultCountingOutRhymer() {
 		stack = new IntArrayStack();
 	}
-	public DefaultCountingOutRhymer(IntArrayStack stack) {
+	public DefaultCountingOutRhymer(IntContainer stack) {
 		this.stack = stack;
 	}
 }
