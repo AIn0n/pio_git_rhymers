@@ -1,14 +1,10 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.Containers;
 
 /**
  * class contains simple linked list implementation working with integers values
  */
 public class IntLinkedList implements IntContainer {
 
-	/**
-	 * Default return value if list is empty
-	 */
-	private static final int DEFAULT_VALUE = -1;
 	private Node last;
 
 	/**
@@ -49,7 +45,7 @@ public class IntLinkedList implements IntContainer {
 	@Override
 	public int top() {
 		if (isEmpty())
-			return DEFAULT_VALUE;
+			return IF_EMPTY;
 		return last.getValue();
 	}
 
@@ -59,7 +55,7 @@ public class IntLinkedList implements IntContainer {
 	@Override
 	public int pop() {
 		if (isEmpty())
-			return DEFAULT_VALUE;
+			return IF_EMPTY;
 		int ret = last.getValue();
 		last = last.getPrev();
 		return ret;

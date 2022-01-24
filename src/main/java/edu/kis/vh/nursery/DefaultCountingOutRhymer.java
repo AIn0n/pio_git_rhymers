@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.Containers.IntArrayStack;
+
 public class DefaultCountingOutRhymer {
 	public int getTotal() {
 		return stack.getTotal();

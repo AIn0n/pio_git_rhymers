@@ -1,11 +1,8 @@
-package edu.kis.vh.nursery;
-
-import edu.kis.vh.nursery.list.IntContainer;
+package edu.kis.vh.nursery.Containers;
 
 public class IntArrayStack implements IntContainer {
     public static final int CAPACITY = 12;
     public static final int EMPTY = -1;
-    public static final int IF_EMPTY = -1;
 
     private final int[] numbers = new int[CAPACITY];
 
