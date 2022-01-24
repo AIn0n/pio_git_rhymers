@@ -3,7 +3,7 @@ package edu.kis.vh.nursery.list;
 /**
  * class contains simple linked list implementation working with integers values
  */
-public class IntLinkedList {
+public class IntLinkedList implements IntContainer {
 
 	/**
 	 * Default return value if list is empty
@@ -15,6 +15,7 @@ public class IntLinkedList {
 	 * add element into list as last one.
 	 * @param i value of new element
 	 */
+	@Override
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -28,6 +29,7 @@ public class IntLinkedList {
 	/**
 	 * @return Does list contain any element?
 	 */
+	@Override
 	public boolean isEmpty() {
 		return last == null;
 	}
@@ -36,6 +38,7 @@ public class IntLinkedList {
 	 * @return return true if list is full
 	 * TODO: implement functionality
 	 */
+	@Override
 	public boolean isFull() {
 		return false;
 	}
@@ -43,6 +46,7 @@ public class IntLinkedList {
 	/**
 	 * @return return last element value
 	 */
+	@Override
 	public int top() {
 		if (isEmpty())
 			return DEFAULT_VALUE;
@@ -52,6 +56,7 @@ public class IntLinkedList {
 	/**
 	 * @return return value and remove last element
 	 */
+	@Override
 	public int pop() {
 		if (isEmpty())
 			return DEFAULT_VALUE;
